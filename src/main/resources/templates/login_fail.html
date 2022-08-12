@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>About us</title>
+</head>
+<body>
+	<section>
+	   <div class="d-flex align-items-center justify-content-center vh-100">
+            <div class="text-center mt-3">
+               <!-- <h1 class="display-1 fw-bold">404</h1>  -->
+               <img alt="" src="" th:src="@{/image/404-error.png}"  style="width:150px">
+                <p class="fs-3"> <span class="text-danger">Opps!</span> Page not found.</p>
+                <p class="lead">
+                    The page you’re looking for doesn’t exist.
+                  </p>
+                <a href="#" th:href="@{/}" class="btn bg-primary text-white">Go Home</a>
+                 <a href="#" th:href="@{/signIn}" class="btn bg-primary text-white">Log In</a>
+            </div>
+        </div>
+	</section>
+</body>
+</html>
