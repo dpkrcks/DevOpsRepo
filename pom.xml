@@ -15,8 +15,8 @@
 	<name>SmartContactManager</name>
 	<description>First Complete project in spring Boot+Thymeleaf</description>
     <properties>
-        <maven.compiler.target>17</maven.compiler.target>
-        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.7</maven.compiler.source>
     </properties>
          
 
@@ -96,6 +96,13 @@
         <testFailureIgnore>true</testFailureIgnore>
     </configuration>
 </plugin>
+   <plugin>
+     <artifactId>maven-compiler-plugin</artifactId>
+      <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+      </configuration>
+   </plugin>
             
 		</plugins>
 	</build>
